@@ -203,6 +203,93 @@
   width: 1539px;
   height: 840px;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .container {
+    width: 672px;
+  }
+}
+.home > .showcase_corporate .container .a1 {
+  top: 0px;
+  left: 0px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .container .a1 {
+    top: 0px;
+    left: 0px;
+    width: 251px;
+    height: 367px;
+  }
+}
+.home > .showcase_corporate .container .a2 {
+  top: 0px;
+  left: 254px;
+  width: 418px;
+  height: 198px;
+}
+.home > .showcase_corporate .container .a3 {
+  top: 201px;
+  left: 254px;
+  width: 58px;
+  height: 166px;
+}
+.home > .showcase_corporate .container .a4 {
+  top: 201px;
+  left: 316px;
+  width: 356px;
+  height: 89px;
+}
+.home > .showcase_corporate .container .moreBox {
+  position: absolute;
+  width: 259px;
+  height: 167px;
+  top: 673px;
+  left: 1197px;
+  background: url(../assets/5.png);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .container .moreBox {
+    width: 147px;
+    height: 77px;
+    top: 290px;
+    left: 478px;
+  }
+}
+.home > .showcase_corporate .container .moreBox .white {
+  display: flex;
+  align-items: center;
+  margin-left: 31px;
+  background: white;
+  width: 315px;
+  height: 105px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .container .moreBox .white {
+    width: 178px;
+    height: 59px;
+  }
+}
+.home > .showcase_corporate .container .moreBox .white .word {
+  margin: 0 17px 0 32px;
+  font: Bold 72px/108px Roboto;
+  color: #aa0601;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .container .moreBox .white .word {
+    margin: 0 10px 0 19px;
+    font: Bold 40px/30px Roboto;
+  }
+}
+.home > .showcase_corporate .container .moreBox .white img {
+  position: static;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .container .moreBox .white img {
+    width: 27px;
+  }
+}
 .home > .showcase_corporate .second_container {
   margin-top: 60px;
   display: flex;
@@ -241,33 +328,6 @@
 }
 .home > .showcase_corporate img {
   position: absolute;
-}
-.home > .showcase_corporate .moreBox {
-  position: absolute;
-  width: 259px;
-  height: 167px;
-  top: 673px;
-  left: 1197px;
-  background: url(../assets/5.png);
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.home > .showcase_corporate .moreBox .white {
-  display: flex;
-  align-items: center;
-  margin-left: 31px;
-  background: white;
-  width: 315px;
-  height: 105px;
-}
-.home > .showcase_corporate .moreBox .white .word {
-  margin: 0 17px 0 32px;
-  font: Bold 72px/108px Roboto;
-  color: #aa0601;
-}
-.home > .showcase_corporate .moreBox .white img {
-  position: static;
 }
 .home > .customer_recommand {
   margin-top: -330px;
@@ -334,13 +394,15 @@
 .home > .contact .container .input_title {
   margin-top: 16px;
 }
-.home > .contact .container input, .home > .contact .container textarea {
+.home > .contact .container input,
+.home > .contact .container textarea {
   width: 100%;
   background: transparent;
   border: 1px solid gray;
   padding: 14px 16px;
 }
-.home > .contact .container input::placeholder, .home > .contact .container textarea::placeholder {
+.home > .contact .container input::placeholder,
+.home > .contact .container textarea::placeholder {
   opacity: 0.2;
 }
 .home > .contact .container input[type=checkbox] {
@@ -376,11 +438,13 @@
 .home > .footer .a1 > img {
   margin-left: 32px;
 }
-.home > .footer .a2, .home > .footer .a3 {
+.home > .footer .a2,
+.home > .footer .a3 {
   font-size: 36px;
   margin: 8px 0;
 }
-.home > .footer .a2 > img, .home > .footer .a3 > img {
+.home > .footer .a2 > img,
+.home > .footer .a3 > img {
   height: 36px;
   margin-right: 16px;
 }

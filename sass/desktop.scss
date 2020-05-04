@@ -4,23 +4,29 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 // @import "compass/reset";
-@mixin rwd($point){
-  @if $point == phone {
-    @media all and (max-width: 600px){
+@mixin rwd($point) {
+  @if $point==phone {
+    @media all and (max-width: 600px) {
       @content
     }
-  } @else if $point == pad {
-      @media all and (min-width: 601px) and (max-width: 960px){
+  }
+
+  @else if $point==pad {
+    @media all and (min-width: 601px) and (max-width: 960px) {
       @content
     }
-  } @else{
+  }
+
+  @else {
     @content
   }
 }
-*{
+
+* {
   box-sizing: border-box;
 }
-*:focus{
+
+*:focus {
   outline: none;
   // @include rwd(phone){
   //   outline: aqua;
@@ -29,11 +35,14 @@
   //   outline: pad;
   // }
 }
+
 .spacer {
   flex: 1;
 }
+
 .home {
   height: 100%;
+
   .nav {
     height: 108px;
     display: flex;
@@ -47,6 +56,7 @@
       margin: 0 32px;
     }
   }
+
   .main {
     height: 840px;
     background-image: url("../assets/68.png");
@@ -54,87 +64,100 @@
     background-position: center;
     position: relative;
     color: #650300;
+
     .subtitle {
       position: absolute;
       top: 350px;
       right: 20%;
       font: 36px/54px PingFang TC;
 
-      @include rwd(pad){
+      @include rwd(pad) {
         top: 373px;
         right: 48px;
         font: 20px/30px PingFang TC;
       }
     }
+
     .title {
       position: absolute;
       top: 400px;
       right: 20%;
       font: 64px/96px PingFang TC;
 
-      @include rwd(pad){
+      @include rwd(pad) {
         font: 48px/72px PingFang TC;
         top: 401px;
         right: 48px;
       }
     }
   }
-  & > .description {
+
+  &>.description {
     height: 544px;
     color: #650300;
     background: #aa06010d;
     overflow: auto;
-    @include rwd(pad){
+
+    @include rwd(pad) {
       height: 668px;
     }
+
     .title {
       padding-top: 64px;
       font: 48px/72px PingFang TC;
       text-align: center;
 
-      @include rwd(pad){
+      @include rwd(pad) {
         padding-top: 40px;
         font: 32px/48px PingFang TC;
       }
-      
+
     }
+
     .fourBox {
       margin-top: 44px;
       display: flex;
       justify-content: center;
 
 
-      @include rwd(pad){
+      @include rwd(pad) {
         flex-wrap: wrap;
       }
+
       .feature {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 208px;
         margin: 0 49px;
-        @include rwd(pad){
+
+        @include rwd(pad) {
           min-width: 324px;
-          max-width:324px;
+          max-width: 324px;
           margin: 0 62px;
           height: 256px;
         }
+
         img {
           width: 100px;
           height: 100px;
           margin-bottom: 40px;
-          @include rwd(pad){
+
+          @include rwd(pad) {
             width: 80px;
             height: 80px;
             margin-bottom: 16px;
           }
         }
+
         .name {
           font: 24px/36px PingFang TC;
-          @include rwd(pad){
+
+          @include rwd(pad) {
             font: 20px/30px PingFang TC;
           }
         }
+
         .desc {
           font: 16px/24px PingFang TC;
           color: black;
@@ -143,60 +166,70 @@
     }
   }
 
-  & > .showcase_classic {
+  &>.showcase_classic {
     color: #650300;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 80px;
+
     .title {
       padding: 64px 0 60px 0;
       font: bolder 48px/72px PingFang TC;
-      @include rwd(pad){
+
+      @include rwd(pad) {
         font: bolder 32px/48px PingFang TC;
       }
     }
+
     .item {
       color: #aa0601;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 16px 0;
-      @include rwd(pad){
+
+      @include rwd(pad) {
         justify-content: start;
         padding-left: 48px;
       }
-      .word{
+
+      .word {
         font: Italic bolder 44px/72px Roboto;
-        @include rwd(pad){
+
+        @include rwd(pad) {
           font: Italic bolder 28px/42px Roboto;
           order: 2;
         }
       }
-      img{
-        @include rwd(pad){
+
+      img {
+        @include rwd(pad) {
           width: 32px;
           order: 2;
           margin-right: 8px;
         }
       }
+
       .pic {
         margin: 0 24px;
-        @include rwd(pad){
+
+        @include rwd(pad) {
           width: 410px;
           height: 168px;
           margin: 0;
           margin-right: 65px;
-          order:1;
+          order: 1;
         }
       }
 
     }
 
   }
-  & > .showcase_corporate {
+
+  &>.showcase_corporate {
     height: 2162px;
-    background: url(../assets/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png)
-      center/cover;
+    background: url(../assets/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png) center/cover;
+
     .container {
       position: relative;
       margin: 0 auto;
@@ -204,11 +237,98 @@
       max-height: 840px;
       width: 1539px;
       height: 840px;
+      @include rwd(pad){
+        width: 672px;
+      }
+      .a1 {
+        top: 0px;
+        left: 0px;
+
+        @include rwd(pad) {
+          top: 0px;
+          left: 0px;
+          width: 251px;
+          height: 367px;
+
+        }
+      }
+
+      .a2 {
+        top: 0px;
+        left: 254px;
+        width: 418px;
+        height: 198px;
+      }
+
+      .a3 {
+        top: 201px;
+        left: 254px;
+        width: 58px;
+        height: 166px;
+      }
+
+      .a4 {
+        top: 201px;
+        left: 316px;
+        width: 356px;
+        height: 89px;
+      }
+
+      .moreBox {
+        position: absolute;
+        width: 259px;
+        height: 167px;
+        top: 673px;
+        left: 1197px;
+        background: url(../assets/5.png);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+  
+        @include rwd(pad) {
+          width: 147px;
+          height: 77px;
+          top: 290px;
+          left: 478px;
+        }
+        .white {
+          display: flex;
+          align-items: center;
+          margin-left: 31px;
+          background: white;
+          width: 315px;
+          height: 105px;
+  
+          @include rwd(pad) {
+            width: 178px;
+            height: 59px;
+          }
+          .word {
+            margin: 0 17px 0 32px;
+            font: Bold 72px/108px Roboto;
+            color: #aa0601;
+
+            @include rwd(pad) {
+              margin: 0 10px 0 19px;
+              font: Bold 40px/30px Roboto;
+            }
+          }
+  
+          img {
+            position: static;
+            @include rwd(pad) {
+              width: 27px;
+            }
+          }
+        }
+      }
     }
+
     .second_container {
       margin-top: 60px;
       display: flex;
       justify-content: center;
+
       .box {
         width: 585px;
         height: 592px;
@@ -219,6 +339,7 @@
         align-items: center;
         position: relative;
         margin: 0 15px;
+
         &::before {
           content: "";
           position: absolute;
@@ -228,65 +349,48 @@
           height: 100%;
         }
       }
+
       .box1 {
         background: url(../assets/14.png) center/cover;
       }
+
       .box2 {
         background: url(../assets/39.png) center/cover;
       }
     }
+
     .title {
       color: white;
       text-align: center;
       padding: 64px 0 60px 0;
       font: bolder 48px/72px PingFang TC;
     }
+
     position: relative;
+
     img {
       position: absolute;
     }
-    .moreBox {
-      position: absolute;
-      width: 259px;
-      height: 167px;
-      top: 673px;
-      left: 1197px;
-      background: url(../assets/5.png);
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      .white {
-        display: flex;
-        align-items: center;
-        margin-left: 31px;
-        background: white;
-        width: 315px;
-        height: 105px;
-        .word {
-          margin: 0 17px 0 32px;
-          font: Bold 72px/108px Roboto;
-          color: #aa0601;
-        }
-        img {
-          position: static;
-        }
-      }
-    }
+
   }
-  & > .customer_recommand {
+
+  &>.customer_recommand {
     margin-top: -330px;
     position: relative;
+
     .title {
       margin-bottom: 60px;
       font: bold 48px/72px PingFang TC;
       color: white;
       text-align: center;
     }
+
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     .customer {
       width: 282px;
       height: 440px;
@@ -294,21 +398,25 @@
       border: 1px solid #dee2e6;
       box-sizing: border-box;
       padding: 0 16px 16px;
+
       .bg {
         width: 282px;
         height: 256px;
         margin: -1px 0 0 -17px;
         border: 0px solid #dee2e6;
       }
+
       .name {
         font: bold 16px/21px Roboto;
         color: #212529;
       }
+
       .said {
         margin-top: 16px;
         font: 16px/24px Roboto;
         color: #212529;
       }
+
       .time {
         margin-top: 16px;
         font: 16px/21px Roboto;
@@ -316,11 +424,13 @@
       }
     }
   }
-  & > .contact {
+
+  &>.contact {
     margin-top: 80px;
     height: 900px;
     background-color: #aa06010d;
     color: black;
+
     .title {
       font: 48px PingFang TC;
       padding-top: 64px;
@@ -328,47 +438,59 @@
 
       text-align: center;
     }
+
     .container {
       width: 792px;
       margin: 0 auto;
+
       .description {
         font-size: 20px;
       }
-      .input_title{
+
+      .input_title {
         margin-top: 16px;
 
       }
-      input,textarea {
+
+      input,
+      textarea {
         width: 100%;
         background: transparent;
         border: 1px solid gray;
         padding: 14px 16px;
-        &::placeholder{
+
+        &::placeholder {
           opacity: 0.2;
         }
       }
-      input[type=checkbox]{
+
+      input[type=checkbox] {
         display: inline;
         width: 24px;
       }
-      .btn{
+
+      .btn {
         margin: 42px auto 0;
         display: block;
       }
     }
   }
-  & > .footer {
+
+  &>.footer {
     background-color: #aa0601;
     color: white;
-    & > .container{
+
+    &>.container {
       width: 1150px;
       margin: 0 auto;
       padding-top: 48px;
     }
+
     .row {
       display: flex;
       align-items: center;
     }
+
     .a1 {
       a {
         color: white;
@@ -376,30 +498,40 @@
         font: 20px/30px PingFang TC;
         margin-right: 48px;
       }
-      & > img {
+
+      &>img {
         margin-left: 32px;
       }
+
       margin-bottom: 16px;
     }
-    .a2, .a3{
+
+    .a2,
+    .a3 {
       font-size: 36px;
-      & > img {
+
+      &>img {
         height: 36px;
         margin-right: 16px;
       }
+
       margin: 8px 0;
     }
-    .a4{
+
+    .a4 {
       margin-top: 24px;
       padding: 24px 0;
       border-top: 1px solid white;
-      & > img{
+
+      &>img {
         margin-right: 38px;
       }
-      & > .copyright{
+
+      &>.copyright {
         font: 16px/24px Roboto;
       }
-      & > a{
+
+      &>a {
         color: white;
         text-decoration: none;
         font: 14px PingFang TC;
@@ -408,6 +540,7 @@
       }
     }
   }
+
   .btn {
     width: 131px;
     height: 43px;
@@ -417,4 +550,3 @@
     font: 16px/24px PingFang TC;
   }
 }
-
