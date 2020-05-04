@@ -43,11 +43,25 @@
   right: 20%;
   font: 36px/54px PingFang TC;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home .main .subtitle {
+    top: 373px;
+    right: 48px;
+    font: 20px/30px PingFang TC;
+  }
+}
 .home .main .title {
   position: absolute;
   top: 400px;
   right: 20%;
   font: 64px/96px PingFang TC;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home .main .title {
+    font: 48px/72px PingFang TC;
+    top: 401px;
+    right: 48px;
+  }
 }
 .home > .description {
   height: 544px;
@@ -55,15 +69,31 @@
   background: #aa06010d;
   overflow: auto;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .description {
+    height: 668px;
+  }
+}
 .home > .description .title {
   padding-top: 64px;
   font: 48px/72px PingFang TC;
   text-align: center;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .description .title {
+    padding-top: 40px;
+    font: 32px/48px PingFang TC;
+  }
+}
 .home > .description .fourBox {
   margin-top: 44px;
   display: flex;
   justify-content: center;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .description .fourBox {
+    flex-wrap: wrap;
+  }
 }
 .home > .description .fourBox .feature {
   display: flex;
@@ -72,13 +102,33 @@
   width: 208px;
   margin: 0 49px;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .description .fourBox .feature {
+    min-width: 324px;
+    max-width: 324px;
+    margin: 0 62px;
+    height: 256px;
+  }
+}
 .home > .description .fourBox .feature img {
   width: 100px;
   height: 100px;
   margin-bottom: 40px;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .description .fourBox .feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+  }
+}
 .home > .description .fourBox .feature .name {
   font: 24px/36px PingFang TC;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .description .fourBox .feature .name {
+    font: 20px/30px PingFang TC;
+  }
 }
 .home > .description .fourBox .feature .desc {
   font: 16px/24px PingFang TC;
@@ -94,6 +144,11 @@
   padding: 64px 0 60px 0;
   font: bolder 48px/72px PingFang TC;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_classic .title {
+    font: bolder 32px/48px PingFang TC;
+  }
+}
 .home > .showcase_classic .item {
   color: #aa0601;
   display: flex;
@@ -101,8 +156,39 @@
   justify-content: center;
   margin: 16px 0;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_classic .item {
+    justify-content: start;
+    padding-left: 48px;
+  }
+}
+.home > .showcase_classic .item .word {
+  font: Italic bolder 44px/72px Roboto;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_classic .item .word {
+    font: Italic bolder 28px/42px Roboto;
+    order: 2;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_classic .item img {
+    width: 32px;
+    order: 2;
+    margin-right: 8px;
+  }
+}
 .home > .showcase_classic .item .pic {
   margin: 0 24px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_classic .item .pic {
+    width: 410px;
+    height: 168px;
+    margin: 0;
+    margin-right: 65px;
+    order: 1;
+  }
 }
 .home > .showcase_corporate {
   height: 2162px;
