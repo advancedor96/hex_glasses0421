@@ -200,6 +200,21 @@
     height: 1221px;
   }
 }
+.home > .showcase_corporate .title {
+  color: white;
+  text-align: center;
+  padding: 64px 0 60px 0;
+  font: bolder 48px/72px PingFang TC;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .title {
+    padding: 40px 0 32px 0;
+    font: bolder 32px/48px PingFang TC;
+  }
+}
+.home > .showcase_corporate img {
+  position: absolute;
+}
 .home > .showcase_corporate .container {
   position: relative;
   margin: 0 auto;
@@ -368,22 +383,15 @@
 .home > .showcase_corporate .second_container .box2 {
   background: url(../assets/39.png) center/cover;
 }
-.home > .showcase_corporate .title {
-  color: white;
-  text-align: center;
-  padding: 64px 0 60px 0;
-  font: bolder 48px/72px PingFang TC;
-}
-.home > .showcase_corporate img {
-  position: absolute;
-}
 .home > .customer_recommand {
   margin-top: -330px;
   position: relative;
 }
 @media all and (min-width: 601px) and (max-width: 960px) {
   .home > .customer_recommand {
-    margin-top: -300px;
+    margin: 0 auto;
+    margin-top: -370px;
+    width: 672px;
   }
 }
 .home > .customer_recommand .title {
@@ -394,13 +402,21 @@
 }
 @media all and (min-width: 601px) and (max-width: 960px) {
   .home > .customer_recommand .title {
-    font: bold 32px/48px PingFang TC;
+    margin-bottom: 32px;
+    font: 32px/48px PingFang TC;
   }
 }
 .home > .customer_recommand .container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .customer_recommand .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .home > .customer_recommand .customer {
   width: 282px;
@@ -409,12 +425,25 @@
   border: 1px solid #dee2e6;
   box-sizing: border-box;
   padding: 0 16px 16px;
+  background: white;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .customer_recommand .customer {
+    margin: 0 0 24px 0;
+    width: 324px;
+  }
 }
 .home > .customer_recommand .customer .bg {
   width: 282px;
   height: 256px;
   margin: -1px 0 0 -17px;
   border: 0px solid #dee2e6;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .customer_recommand .customer .bg {
+    width: 324px;
+    object-fit: cover;
+  }
 }
 .home > .customer_recommand .customer .name {
   font: bold 16px/21px Roboto;
@@ -436,18 +465,40 @@
   background-color: #aa06010d;
   color: black;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .contact {
+    margin-top: 16px;
+    height: 767px;
+  }
+}
 .home > .contact .title {
   font: 48px PingFang TC;
   padding-top: 64px;
   margin-bottom: 24px;
   text-align: center;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .contact .title {
+    padding-top: 40px;
+    font: bold 32px/48px PingFang TC;
+  }
+}
 .home > .contact .container {
   width: 792px;
   margin: 0 auto;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .contact .container {
+    width: 496px;
+  }
+}
 .home > .contact .container .description {
   font-size: 20px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .contact .container .description {
+    font-size: 16px;
+  }
 }
 .home > .contact .container .input_title {
   margin-top: 16px;
@@ -462,6 +513,7 @@
 .home > .contact .container input::placeholder,
 .home > .contact .container textarea::placeholder {
   opacity: 0.2;
+  font-size: 16px;
 }
 .home > .contact .container input[type=checkbox] {
   display: inline;

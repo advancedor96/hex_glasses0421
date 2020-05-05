@@ -233,6 +233,23 @@
     @include rwd(pad) {
       height: 1221px;
     }
+
+    .title {
+      color: white;
+      text-align: center;
+      padding: 64px 0 60px 0;
+      font: bolder 48px/72px PingFang TC;
+      @include rwd(pad) {
+        padding: 40px 0 32px 0;
+        font: bolder 32px/48px PingFang TC;
+      }
+    }
+
+    position: relative;
+
+    img {
+      position: absolute;
+    }
     .container {
       position: relative;
       margin: 0 auto;
@@ -397,18 +414,6 @@
       }
     }
 
-    .title {
-      color: white;
-      text-align: center;
-      padding: 64px 0 60px 0;
-      font: bolder 48px/72px PingFang TC;
-    }
-
-    position: relative;
-
-    img {
-      position: absolute;
-    }
 
   }
 
@@ -416,7 +421,9 @@
     margin-top: -330px;
     position: relative;
     @include rwd(pad){
-      margin-top: -300px;
+      margin: 0 auto;
+      margin-top: -370px;
+      width: 672px;
     }
     .title {
       margin-bottom: 60px;
@@ -424,14 +431,20 @@
       color: white;
       text-align: center;
       @include rwd(pad){
-        font: bold 32px/48px PingFang TC;
+        margin-bottom: 32px;
+        font: 32px/48px PingFang TC;
       }
     }
 
     .container {
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      @include rwd(pad){
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
     }
 
     .customer {
@@ -441,12 +454,21 @@
       border: 1px solid #dee2e6;
       box-sizing: border-box;
       padding: 0 16px 16px;
+      background: white;
 
+      @include rwd(pad){
+        margin: 0 0 24px 0;
+        width: 324px;
+      }
       .bg {
         width: 282px;
         height: 256px;
         margin: -1px 0 0 -17px;
         border: 0px solid #dee2e6;
+        @include rwd(pad){
+          width: 324px;
+          object-fit: cover;
+        }
       }
 
       .name {
@@ -473,21 +495,33 @@
     height: 900px;
     background-color: #aa06010d;
     color: black;
-
+    @include rwd(pad){
+      margin-top: 16px;
+      height: 767px;
+    }
     .title {
       font: 48px PingFang TC;
       padding-top: 64px;
       margin-bottom: 24px;
-
       text-align: center;
+      @include rwd(pad){
+        padding-top: 40px;
+        font: bold 32px/48px PingFang TC;
+      }
     }
 
     .container {
       width: 792px;
       margin: 0 auto;
 
+      @include rwd(pad){
+        width: 496px;
+      }
       .description {
         font-size: 20px;
+        @include rwd(pad){
+          font-size: 16px;
+        }
       }
 
       .input_title {
@@ -504,6 +538,7 @@
 
         &::placeholder {
           opacity: 0.2;
+          font-size: 16px;
         }
       }
 
