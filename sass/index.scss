@@ -2,6 +2,16 @@ html,body{
   height: 100%;
   margin: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+
 .link {
   height: 100%;
   display: flex;
@@ -15,5 +25,6 @@ html,body{
     background: #aa0601 0% 0% no-repeat padding-box;
     color: #ffffff;
     font: Medium 16px/24px PingFang TC;
+    cursor: pointer;
   }
 }

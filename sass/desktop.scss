@@ -324,6 +324,7 @@ body {
 
       .pic {
         margin: 0 24px;
+        cursor: pointer;
 
         @include rwd(pad) {
           width: 410px;
