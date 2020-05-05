@@ -738,6 +738,12 @@ body {
     height: 767px;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .contact {
+    margin-top: 0px;
+    height: 638px;
+  }
+}
 .home > .contact .title {
   font: 48px PingFang TC;
   padding-top: 64px;
@@ -750,6 +756,12 @@ body {
     font: bold 32px/48px PingFang TC;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .contact .title {
+    padding-top: 24px;
+    font: bold 20px/48px PingFang TC;
+  }
+}
 .home > .contact .container {
   width: 792px;
   margin: 0 auto;
@@ -759,10 +771,21 @@ body {
     width: 496px;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .contact .container {
+    width: 327px;
+    padding-bottom: 48px;
+  }
+}
 .home > .contact .container .description {
   font-size: 20px;
 }
 @media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .contact .container .description {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 600px) {
   .home > .contact .container .description {
     font-size: 16px;
   }
@@ -776,6 +799,12 @@ body {
   background: transparent;
   border: 1px solid gray;
   padding: 14px 16px;
+}
+@media all and (max-width: 600px) {
+  .home > .contact .container input,
+  .home > .contact .container textarea {
+    padding: 7px 12px;
+  }
 }
 .home > .contact .container input::placeholder,
 .home > .contact .container textarea::placeholder {
@@ -798,6 +827,16 @@ body {
   max-width: 1150px;
   margin: 0 auto;
   padding: 48px 48px 40px;
+}
+@media all and (max-width: 600px) {
+  .home > .footer > .container {
+    max-width: 375px;
+    padding: 24px 12px 12px 12px;
+    position: relative;
+  }
+  .home > .footer > .container a {
+    display: none;
+  }
 }
 .home > .footer .row {
   display: flex;
@@ -868,4 +907,52 @@ body {
   text-decoration: none;
   font: 14px PingFang TC;
   margin-left: 62px;
+}
+@media all and (max-width: 600px) {
+  .home > .footer .a1 img {
+    width: 24px;
+  }
+  .home > .footer .a2 {
+    margin-top: -40px;
+    font: 300 16px/30px Roboto;
+  }
+  .home > .footer .a2 img {
+    height: 13px;
+    margin: 0;
+    margin-right: 5px;
+  }
+  .home > .footer .a3 {
+    font: 300 16px/30px Roboto;
+    margin: 0;
+  }
+  .home > .footer .a3 img {
+    height: 13px;
+    margin-right: 5px;
+  }
+  .home > .footer .a4 {
+    display: block;
+    padding: 0;
+    padding-top: 12px;
+  }
+  .home > .footer .a4 .spacer {
+    display: none;
+  }
+  .home > .footer .a4 a {
+    display: block;
+    margin: 0;
+    margin-bottom: 8px;
+    font: 300 14px/21px Roboto;
+  }
+  .home > .footer .a4 .copyright {
+    display: block;
+    font: 300 14px/21px Roboto;
+    margin-bottom: 8px;
+  }
+  .home > .footer .a4 img {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 46px;
+    margin: 0;
+  }
 }
