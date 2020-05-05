@@ -265,7 +265,7 @@ body {
     position: relative;
     width: 352px;
     height: 134px;
-    margin: 0;
+    margin: 0 auto;
   }
   .home > .showcase_classic .item:not(:last-child) {
     margin-bottom: 8px;
