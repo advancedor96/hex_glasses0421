@@ -195,6 +195,11 @@
   background: url(../assets/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png) center/cover;
   position: relative;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate {
+    height: 1221px;
+  }
+}
 .home > .showcase_corporate .container {
   position: relative;
   margin: 0 auto;
@@ -206,11 +211,14 @@
 @media all and (min-width: 601px) and (max-width: 960px) {
   .home > .showcase_corporate .container {
     width: 672px;
+    height: 367px;
   }
 }
 .home > .showcase_corporate .container .a1 {
   top: 0px;
   left: 0px;
+  width: 573px;
+  height: 840px;
 }
 @media all and (min-width: 601px) and (max-width: 960px) {
   .home > .showcase_corporate .container .a1 {
@@ -222,21 +230,45 @@
 }
 .home > .showcase_corporate .container .a2 {
   top: 0px;
-  left: 254px;
-  width: 418px;
-  height: 198px;
+  left: 581px;
+  width: 958px;
+  height: 454px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .container .a2 {
+    top: 0px;
+    left: 254px;
+    width: 418px;
+    height: 198px;
+  }
 }
 .home > .showcase_corporate .container .a3 {
-  top: 201px;
-  left: 254px;
-  width: 58px;
-  height: 166px;
+  top: 462px;
+  left: 581px;
+  width: 132px;
+  height: 378px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .container .a3 {
+    top: 201px;
+    left: 254px;
+    width: 58px;
+    height: 166px;
+  }
 }
 .home > .showcase_corporate .container .a4 {
-  top: 201px;
-  left: 316px;
-  width: 356px;
-  height: 89px;
+  top: 462px;
+  left: 721px;
+  width: 818px;
+  height: 203px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .container .a4 {
+    top: 201px;
+    left: 316px;
+    width: 356px;
+    height: 89px;
+  }
 }
 .home > .showcase_corporate .container .moreBox {
   position: absolute;
@@ -291,9 +323,17 @@
   }
 }
 .home > .showcase_corporate .second_container {
+  margin: 0 auto;
   margin-top: 60px;
   display: flex;
   justify-content: center;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .second_container {
+    width: 672px;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
 }
 .home > .showcase_corporate .second_container .box {
   width: 585px;
@@ -305,6 +345,14 @@
   align-items: center;
   position: relative;
   margin: 0 15px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .showcase_corporate .second_container .box {
+    width: 322px;
+    height: 280px;
+    font: Bold 32px/25px Roboto;
+    margin: 0;
+  }
 }
 .home > .showcase_corporate .second_container .box::before {
   content: "";
@@ -333,11 +381,21 @@
   margin-top: -330px;
   position: relative;
 }
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .customer_recommand {
+    margin-top: -300px;
+  }
+}
 .home > .customer_recommand .title {
   margin-bottom: 60px;
   font: bold 48px/72px PingFang TC;
   color: white;
   text-align: center;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .customer_recommand .title {
+    font: bold 32px/48px PingFang TC;
+  }
 }
 .home > .customer_recommand .container {
   display: flex;
