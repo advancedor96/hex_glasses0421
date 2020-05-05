@@ -21,28 +21,32 @@
     @content
   }
 }
-html,body{
+
+html,
+body {
   height: 100%;
   margin: 0;
 }
+
 * {
   box-sizing: border-box;
 }
 
 *:focus {
   outline: none;
-  // @include rwd(phone){
-  //   outline: aqua;
-  // }
-  // @include rwd(pad){
-  //   outline: pad;
-  // }
 }
 
 .spacer {
   flex: 1;
 }
-
+.btn {
+  width: 131px;
+  height: 43px;
+  margin: 8px;
+  background: #aa0601 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  font: 16px/24px PingFang TC;
+}
 .home {
   height: 100%;
 
@@ -125,6 +129,7 @@ html,body{
 
       @include rwd(pad) {
         flex-wrap: wrap;
+        justify-content: space-around;
       }
 
       .feature {
@@ -135,9 +140,9 @@ html,body{
         margin: 0 49px;
 
         @include rwd(pad) {
-          min-width: 324px;
-          max-width: 324px;
-          margin: 0 62px;
+          min-width: 224px;
+          max-width: 224px;
+          margin: 0 38px;
           height: 256px;
         }
 
@@ -242,6 +247,7 @@ html,body{
       text-align: center;
       padding: 64px 0 60px 0;
       font: bolder 48px/72px PingFang TC;
+
       @include rwd(pad) {
         padding: 40px 0 32px 0;
         font: bolder 32px/48px PingFang TC;
@@ -253,6 +259,7 @@ html,body{
     img {
       position: absolute;
     }
+
     .container {
       position: relative;
       margin: 0 auto;
@@ -260,10 +267,12 @@ html,body{
       max-height: 840px;
       width: 1539px;
       height: 840px;
-      @include rwd(pad){
+
+      @include rwd(pad) {
         width: 672px;
         height: 367px;
       }
+
       .a1 {
         top: 0px;
         left: 0px;
@@ -313,6 +322,7 @@ html,body{
         left: 721px;
         width: 818px;
         height: 203px;
+
         @include rwd(pad) {
           top: 201px;
           left: 316px;
@@ -331,13 +341,14 @@ html,body{
         display: flex;
         align-items: center;
         cursor: pointer;
-  
+
         @include rwd(pad) {
           width: 147px;
           height: 77px;
           top: 290px;
           left: 478px;
         }
+
         .white {
           display: flex;
           align-items: center;
@@ -345,11 +356,12 @@ html,body{
           background: white;
           width: 315px;
           height: 105px;
-  
+
           @include rwd(pad) {
             width: 178px;
             height: 59px;
           }
+
           .word {
             margin: 0 17px 0 32px;
             font: Bold 72px/108px Roboto;
@@ -360,9 +372,10 @@ html,body{
               font: Bold 40px/30px Roboto;
             }
           }
-  
+
           img {
             position: static;
+
             @include rwd(pad) {
               width: 27px;
             }
@@ -377,11 +390,12 @@ html,body{
       display: flex;
       justify-content: center;
 
-      @include rwd(pad){
+      @include rwd(pad) {
         width: 672px;
         justify-content: space-between;
         margin-top: 40px;
       }
+
       .box {
         width: 585px;
         height: 592px;
@@ -392,12 +406,14 @@ html,body{
         align-items: center;
         position: relative;
         margin: 0 15px;
-        @include rwd(pad){
+
+        @include rwd(pad) {
           width: 322px;
           height: 280px;
           font: Bold 32px/25px Roboto;
           margin: 0;
         }
+
         &::before {
           content: "";
           position: absolute;
@@ -423,17 +439,20 @@ html,body{
   &>.customer_recommand {
     margin-top: -330px;
     position: relative;
-    @include rwd(pad){
+
+    @include rwd(pad) {
       margin: 0 auto;
       margin-top: -370px;
       width: 672px;
     }
+
     .title {
       margin-bottom: 60px;
       font: bold 48px/72px PingFang TC;
       color: white;
       text-align: center;
-      @include rwd(pad){
+
+      @include rwd(pad) {
         margin-bottom: 32px;
         font: 32px/48px PingFang TC;
       }
@@ -444,7 +463,8 @@ html,body{
       display: flex;
       justify-content: center;
       align-items: center;
-      @include rwd(pad){
+
+      @include rwd(pad) {
         flex-wrap: wrap;
         justify-content: space-between;
       }
@@ -459,16 +479,18 @@ html,body{
       padding: 0 16px 16px;
       background: white;
 
-      @include rwd(pad){
+      @include rwd(pad) {
         margin: 0 0 24px 0;
         width: 324px;
       }
+
       .bg {
         width: 282px;
         height: 256px;
         margin: -1px 0 0 -17px;
         border: 0px solid #dee2e6;
-        @include rwd(pad){
+
+        @include rwd(pad) {
           width: 324px;
           object-fit: cover;
         }
@@ -498,16 +520,19 @@ html,body{
     height: 900px;
     background-color: #aa06010d;
     color: black;
-    @include rwd(pad){
+
+    @include rwd(pad) {
       margin-top: 16px;
       height: 767px;
     }
+
     .title {
       font: 48px PingFang TC;
       padding-top: 64px;
       margin-bottom: 24px;
       text-align: center;
-      @include rwd(pad){
+
+      @include rwd(pad) {
         padding-top: 40px;
         font: bold 32px/48px PingFang TC;
       }
@@ -517,12 +542,14 @@ html,body{
       width: 792px;
       margin: 0 auto;
 
-      @include rwd(pad){
+      @include rwd(pad) {
         width: 496px;
       }
+
       .description {
         font-size: 20px;
-        @include rwd(pad){
+
+        @include rwd(pad) {
           font-size: 16px;
         }
       }
@@ -578,14 +605,16 @@ html,body{
         text-decoration: none;
         font: 20px/30px PingFang TC;
         margin-right: 48px;
-        @include rwd(pad){
+
+        @include rwd(pad) {
           font: 14px PingFang TC;
         }
       }
 
       &>img {
         margin-left: 32px;
-        @include rwd(pad){
+
+        @include rwd(pad) {
           width: 24px;
         }
       }
@@ -597,13 +626,15 @@ html,body{
     .a3 {
       font-size: 36px;
 
-      @include rwd(pad){
+      @include rwd(pad) {
         font-size: 20px;
       }
+
       &>img {
         height: 36px;
         margin-right: 16px;
-        @include rwd(pad){
+
+        @include rwd(pad) {
           width: 32px;
         }
       }
@@ -618,7 +649,8 @@ html,body{
 
       &>img {
         margin-right: 38px;
-        @include rwd(pad){
+
+        @include rwd(pad) {
           display: none;
         }
       }
@@ -637,12 +669,5 @@ html,body{
     }
   }
 
-  .btn {
-    width: 131px;
-    height: 43px;
-    margin: 8px;
-    background: #aa0601 0% 0% no-repeat padding-box;
-    color: #ffffff;
-    font: 16px/24px PingFang TC;
-  }
+
 }

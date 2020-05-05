@@ -2,7 +2,8 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -17,6 +18,15 @@ html, body {
 
 .spacer {
   flex: 1;
+}
+
+.btn {
+  width: 131px;
+  height: 43px;
+  margin: 8px;
+  background: #aa0601 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  font: 16px/24px PingFang TC;
 }
 
 .home {
@@ -98,6 +108,7 @@ html, body {
 @media all and (min-width: 601px) and (max-width: 960px) {
   .home > .description .fourBox {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 .home > .description .fourBox .feature {
@@ -109,9 +120,9 @@ html, body {
 }
 @media all and (min-width: 601px) and (max-width: 960px) {
   .home > .description .fourBox .feature {
-    min-width: 324px;
-    max-width: 324px;
-    margin: 0 62px;
+    min-width: 224px;
+    max-width: 224px;
+    margin: 0 38px;
     height: 256px;
   }
 }
@@ -606,12 +617,4 @@ html, body {
   text-decoration: none;
   font: 14px PingFang TC;
   margin-left: 62px;
-}
-.home .btn {
-  width: 131px;
-  height: 43px;
-  margin: 8px;
-  background: #aa0601 0% 0% no-repeat padding-box;
-  color: #ffffff;
-  font: 16px/24px PingFang TC;
 }
