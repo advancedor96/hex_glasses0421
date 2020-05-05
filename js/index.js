@@ -1,12 +1,12 @@
 $('#desktop').click(() => {
   console.log('click')
-  window.location.pathname= '/desktop'
+  window.location.pathname= '/pages/desktop'
 });
 $('#tablet').click(() => {
   console.log('click')
-  window.location.pathname= '/tablet'
+  window.location.pathname= '/pages/tablet'
 });
 $('#mobile').click(() => {
   console.log('click')
-  window.location.pathname= '/mobile'
+  window.location.pathname= '/pages/mobile'
 });
