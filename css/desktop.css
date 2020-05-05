@@ -38,11 +38,28 @@ body {
   align-items: center;
   background-color: #aa0601;
 }
+@media all and (max-width: 600px) {
+  .home .nav {
+    height: 50px;
+    justify-content: center;
+  }
+  .home .nav .spacer {
+    display: none;
+  }
+  .home .nav img {
+    width: 48px;
+  }
+}
 .home .nav a {
   color: white;
   text-decoration: none;
   font: 20px/30px PingFang TC;
   margin: 0 32px;
+}
+@media all and (max-width: 600px) {
+  .home .nav a {
+    display: none;
+  }
 }
 .home .main {
   height: 840px;
@@ -51,6 +68,11 @@ body {
   background-position: center;
   position: relative;
   color: #650300;
+}
+@media all and (max-width: 600px) {
+  .home .main {
+    height: 394px;
+  }
 }
 .home .main .subtitle {
   position: absolute;
@@ -63,6 +85,13 @@ body {
     top: 373px;
     right: 48px;
     font: 20px/30px PingFang TC;
+  }
+}
+@media all and (max-width: 600px) {
+  .home .main .subtitle {
+    top: 163px;
+    right: 12px;
+    font: 16px/30px PingFang TC;
   }
 }
 .home .main .title {
@@ -78,6 +107,13 @@ body {
     right: 48px;
   }
 }
+@media all and (max-width: 600px) {
+  .home .main .title {
+    top: 185px;
+    right: 12px;
+    font: 32px/72px PingFang TC;
+  }
+}
 .home > .description {
   height: 544px;
   color: #650300;
@@ -87,6 +123,11 @@ body {
 @media all and (min-width: 601px) and (max-width: 960px) {
   .home > .description {
     height: 668px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .description {
+    height: 1091px;
   }
 }
 .home > .description .title {
@@ -100,6 +141,12 @@ body {
     font: 32px/48px PingFang TC;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .description .title {
+    padding-top: 32px;
+    font: 24px/48px PingFang TC;
+  }
+}
 .home > .description .fourBox {
   margin-top: 44px;
   display: flex;
@@ -109,6 +156,11 @@ body {
   .home > .description .fourBox {
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .description .fourBox {
+    flex-wrap: wrap;
   }
 }
 .home > .description .fourBox .feature {
@@ -126,12 +178,25 @@ body {
     height: 256px;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .description .fourBox .feature {
+    min-width: 224px;
+    max-width: 224px;
+  }
+}
 .home > .description .fourBox .feature img {
   width: 100px;
   height: 100px;
   margin-bottom: 40px;
 }
 @media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .description .fourBox .feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+  }
+}
+@media all and (max-width: 600px) {
   .home > .description .fourBox .feature img {
     width: 80px;
     height: 80px;
@@ -146,15 +211,26 @@ body {
     font: 20px/30px PingFang TC;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .description .fourBox .feature .name {
+    font: 20px/30px PingFang TC;
+  }
+}
 .home > .description .fourBox .feature .desc {
   font: 16px/24px PingFang TC;
   color: black;
+  margin-bottom: 28px;
 }
 .home > .showcase_classic {
   color: #650300;
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 80px;
+}
+@media all and (max-width: 600px) {
+  .home > .showcase_classic {
+    padding-bottom: 24px;
+  }
 }
 .home > .showcase_classic .title {
   padding: 64px 0 60px 0;
@@ -163,6 +239,12 @@ body {
 @media all and (min-width: 601px) and (max-width: 960px) {
   .home > .showcase_classic .title {
     font: bolder 32px/48px PingFang TC;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .showcase_classic .title {
+    font: bold 24px/48px PingFang TC;
+    padding: 24px 0 16px;
   }
 }
 .home > .showcase_classic .item {
@@ -178,6 +260,17 @@ body {
     padding-left: 48px;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .showcase_classic .item {
+    position: relative;
+    width: 352px;
+    height: 134px;
+    margin: 0;
+  }
+  .home > .showcase_classic .item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
 .home > .showcase_classic .item .word {
   font: Italic bolder 44px/72px Roboto;
 }
@@ -187,11 +280,32 @@ body {
     order: 2;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .showcase_classic .item .word {
+    font: Italic bolder 28px/42px Roboto;
+    position: absolute;
+    top: 51px;
+    left: 139px;
+    z-index: 1;
+    color: white;
+  }
+}
 @media all and (min-width: 601px) and (max-width: 960px) {
-  .home > .showcase_classic .item img {
+  .home > .showcase_classic .item .icon {
     width: 32px;
     order: 2;
     margin-right: 8px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .showcase_classic .item .icon {
+    width: 32px;
+    position: absolute;
+    top: 53px;
+    left: 99px;
+    z-index: 1;
+    color: white;
+    filter: brightness(0) saturate(100%) invert(1);
   }
 }
 .home > .showcase_classic .item .pic {
@@ -206,6 +320,16 @@ body {
     order: 1;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .showcase_classic .item .pic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
 .home > .showcase_corporate {
   height: 2162px;
   background: url(../assets/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png) center/cover;
@@ -214,6 +338,11 @@ body {
 @media all and (min-width: 601px) and (max-width: 960px) {
   .home > .showcase_corporate {
     height: 1221px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate {
+    height: 1096px;
   }
 }
 .home > .showcase_corporate .title {
@@ -226,6 +355,12 @@ body {
   .home > .showcase_corporate .title {
     padding: 40px 0 32px 0;
     font: bolder 32px/48px PingFang TC;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .title {
+    padding: 24px 0 16px 0;
+    font: bolder 24px/36px PingFang TC;
   }
 }
 .home > .showcase_corporate img {
@@ -245,6 +380,12 @@ body {
     height: 367px;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .container {
+    width: 327px;
+    height: 226px;
+  }
+}
 .home > .showcase_corporate .container .a1 {
   top: 0px;
   left: 0px;
@@ -257,6 +398,14 @@ body {
     left: 0px;
     width: 251px;
     height: 367px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .container .a1 {
+    top: 0px;
+    left: 0px;
+    width: 156px;
+    height: 226px;
   }
 }
 .home > .showcase_corporate .container .a2 {
@@ -273,6 +422,14 @@ body {
     height: 198px;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .container .a2 {
+    top: 0px;
+    left: 158px;
+    width: 169px;
+    height: 81px;
+  }
+}
 .home > .showcase_corporate .container .a3 {
   top: 462px;
   left: 581px;
@@ -285,6 +442,14 @@ body {
     left: 254px;
     width: 58px;
     height: 166px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .container .a3 {
+    top: 127px;
+    left: 158px;
+    width: 32px;
+    height: 99px;
   }
 }
 .home > .showcase_corporate .container .a4 {
@@ -301,6 +466,14 @@ body {
     height: 89px;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .container .a4 {
+    top: 83px;
+    left: 158px;
+    width: 169px;
+    height: 42px;
+  }
+}
 .home > .showcase_corporate .container .moreBox {
   position: absolute;
   width: 259px;
@@ -314,10 +487,18 @@ body {
 }
 @media all and (min-width: 601px) and (max-width: 960px) {
   .home > .showcase_corporate .container .moreBox {
-    width: 147px;
-    height: 77px;
     top: 290px;
     left: 478px;
+    width: 147px;
+    height: 77px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .container .moreBox {
+    top: 153px;
+    left: 192px;
+    width: 102px;
+    height: 53px;
   }
 }
 .home > .showcase_corporate .container .moreBox .white {
@@ -334,6 +515,14 @@ body {
     height: 59px;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .container .moreBox .white {
+    margin-left: 13px;
+    width: 124px;
+    min-width: 124px;
+    height: 41px;
+  }
+}
 .home > .showcase_corporate .container .moreBox .white .word {
   margin: 0 17px 0 32px;
   font: Bold 72px/108px Roboto;
@@ -345,12 +534,23 @@ body {
     font: Bold 40px/30px Roboto;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .container .moreBox .white .word {
+    margin: 0 8px 0 12px;
+    font: Bold 26px/20px Roboto;
+  }
+}
 .home > .showcase_corporate .container .moreBox .white img {
   position: static;
 }
 @media all and (min-width: 601px) and (max-width: 960px) {
   .home > .showcase_corporate .container .moreBox .white img {
     width: 27px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .container .moreBox .white img {
+    width: 18px;
   }
 }
 .home > .showcase_corporate .second_container {
@@ -364,6 +564,12 @@ body {
     width: 672px;
     justify-content: space-between;
     margin-top: 40px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .second_container {
+    margin-top: 20px;
+    flex-wrap: wrap;
   }
 }
 .home > .showcase_corporate .second_container .box {
@@ -383,6 +589,16 @@ body {
     height: 280px;
     font: Bold 32px/25px Roboto;
     margin: 0;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .showcase_corporate .second_container .box {
+    width: 352px;
+    height: 284px;
+    font: Bold 32px/25px Roboto;
+  }
+  .home > .showcase_corporate .second_container .box:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 .home > .showcase_corporate .second_container .box::before {
@@ -410,6 +626,11 @@ body {
     width: 672px;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .customer_recommand {
+    margin-top: -170px;
+  }
+}
 .home > .customer_recommand .title {
   margin-bottom: 60px;
   font: bold 48px/72px PingFang TC;
@@ -422,6 +643,12 @@ body {
     font: 32px/48px PingFang TC;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .customer_recommand .title {
+    margin-bottom: 16px;
+    font: 24px/36px PingFang TC;
+  }
+}
 .home > .customer_recommand .container {
   width: 100%;
   display: flex;
@@ -432,6 +659,11 @@ body {
   .home > .customer_recommand .container {
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .customer_recommand .container {
+    flex-wrap: wrap;
   }
 }
 .home > .customer_recommand .customer {
@@ -449,6 +681,14 @@ body {
     width: 324px;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .customer_recommand .customer {
+    width: 352px;
+  }
+  .home > .customer_recommand .customer:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
 .home > .customer_recommand .customer .bg {
   width: 282px;
   height: 256px;
@@ -461,9 +701,20 @@ body {
     object-fit: cover;
   }
 }
+@media all and (max-width: 600px) {
+  .home > .customer_recommand .customer .bg {
+    width: 352px;
+    object-fit: cover;
+  }
+}
 .home > .customer_recommand .customer .name {
   font: bold 16px/21px Roboto;
   color: #212529;
+}
+@media all and (max-width: 600px) {
+  .home > .customer_recommand .customer .name {
+    margin-top: 16px;
+  }
 }
 .home > .customer_recommand .customer .said {
   margin-top: 16px;

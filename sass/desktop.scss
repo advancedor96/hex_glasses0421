@@ -55,12 +55,25 @@ body {
     display: flex;
     align-items: center;
     background-color: #aa0601;
+    @include rwd(phone){
+      height: 50px;
+      justify-content: center;
+      .spacer{
+        display: none;
+      }
+      img{
+        width: 48px;
+      }
+    }
 
     a {
       color: white;
       text-decoration: none;
       font: 20px/30px PingFang TC;
       margin: 0 32px;
+      @include rwd(phone){
+        display: none;
+      }
     }
   }
 
@@ -71,7 +84,9 @@ body {
     background-position: center;
     position: relative;
     color: #650300;
-
+    @include rwd(phone){
+      height: 394px;
+    }
     .subtitle {
       position: absolute;
       top: 350px;
@@ -82,6 +97,11 @@ body {
         top: 373px;
         right: 48px;
         font: 20px/30px PingFang TC;
+      }
+      @include rwd(phone){
+        top: 163px;
+        right: 12px;
+        font: 16px/30px PingFang TC;
       }
     }
 
@@ -96,6 +116,12 @@ body {
         top: 401px;
         right: 48px;
       }
+      @include rwd(phone){
+        top: 185px;
+        right: 12px;
+        font: 32px/72px PingFang TC;
+
+      }
     }
   }
 
@@ -108,6 +134,9 @@ body {
     @include rwd(pad) {
       height: 668px;
     }
+    @include rwd(phone){
+      height: 1091px;
+    }
 
     .title {
       padding-top: 64px;
@@ -117,6 +146,10 @@ body {
       @include rwd(pad) {
         padding-top: 40px;
         font: 32px/48px PingFang TC;
+      }
+      @include rwd(phone){
+        padding-top: 32px;
+        font: 24px/48px PingFang TC;
       }
 
     }
@@ -130,6 +163,9 @@ body {
       @include rwd(pad) {
         flex-wrap: wrap;
         justify-content: space-around;
+      }
+      @include rwd(phone){
+        flex-wrap: wrap;
       }
 
       .feature {
@@ -145,6 +181,10 @@ body {
           margin: 0 38px;
           height: 256px;
         }
+        @include rwd(phone){
+          min-width: 224px;
+          max-width: 224px;
+        }
 
         img {
           width: 100px;
@@ -152,6 +192,11 @@ body {
           margin-bottom: 40px;
 
           @include rwd(pad) {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 16px;
+          }
+          @include rwd(phone){
             width: 80px;
             height: 80px;
             margin-bottom: 16px;
@@ -164,11 +209,15 @@ body {
           @include rwd(pad) {
             font: 20px/30px PingFang TC;
           }
+          @include rwd(phone){
+            font: 20px/30px PingFang TC;
+          }
         }
 
         .desc {
           font: 16px/24px PingFang TC;
           color: black;
+          margin-bottom: 28px;
         }
       }
     }
@@ -179,13 +228,19 @@ body {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 80px;
-
+    @include rwd(phone){
+      padding-bottom: 24px;
+    }
     .title {
       padding: 64px 0 60px 0;
       font: bolder 48px/72px PingFang TC;
 
       @include rwd(pad) {
         font: bolder 32px/48px PingFang TC;
+      }
+      @include rwd(phone){
+        font: bold 24px/48px PingFang TC;
+        padding: 24px 0 16px;
       }
     }
 
@@ -200,6 +255,15 @@ body {
         justify-content: start;
         padding-left: 48px;
       }
+      @include rwd(phone){
+        position: relative;
+        width: 352px;
+        height: 134px;
+        margin: 0;
+        &:not(:last-child){
+          margin-bottom: 8px;
+        }
+      }
 
       .word {
         font: Italic bolder 44px/72px Roboto;
@@ -208,13 +272,30 @@ body {
           font: Italic bolder 28px/42px Roboto;
           order: 2;
         }
+        @include rwd(phone){
+          font: Italic bolder 28px/42px Roboto;
+          position: absolute;
+          top:51px;
+          left:139px;
+          z-index: 1;
+          color: white;
+        }
       }
 
-      img {
+      .icon {
         @include rwd(pad) {
           width: 32px;
           order: 2;
           margin-right: 8px;
+        }
+        @include rwd(phone){
+          width: 32px;
+          position: absolute;
+          top:53px;
+          left:99px;
+          z-index: 1;
+          color: white;
+          filter: brightness(0) saturate(100%) invert(1);
         }
       }
 
@@ -227,6 +308,15 @@ body {
           margin: 0;
           margin-right: 65px;
           order: 1;
+        }
+        @include rwd(phone){
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top:0;
+          left:0;
+          z-index: 0;
+          
         }
       }
 
@@ -241,6 +331,9 @@ body {
     @include rwd(pad) {
       height: 1221px;
     }
+    @include rwd(phone){
+      height: 1096px;
+    }
 
     .title {
       color: white;
@@ -251,6 +344,10 @@ body {
       @include rwd(pad) {
         padding: 40px 0 32px 0;
         font: bolder 32px/48px PingFang TC;
+      }
+      @include rwd(phone){
+        padding: 24px 0 16px 0;
+        font: bolder 24px/36px PingFang TC;
       }
     }
 
@@ -272,6 +369,10 @@ body {
         width: 672px;
         height: 367px;
       }
+      @include rwd(phone) {
+        width: 327px;
+        height: 226px;
+      }
 
       .a1 {
         top: 0px;
@@ -286,6 +387,12 @@ body {
           height: 367px;
 
         }
+        @include rwd(phone){
+          top: 0px;
+          left: 0px;
+          width: 156px;
+          height: 226px;
+        }
       }
 
       .a2 {
@@ -299,7 +406,12 @@ body {
           left: 254px;
           width: 418px;
           height: 198px;
-
+        }
+        @include rwd(phone){
+          top: 0px;
+          left: 158px;
+          width: 169px;
+          height: 81px;
         }
       }
 
@@ -315,6 +427,12 @@ body {
           width: 58px;
           height: 166px;
         }
+        @include rwd(phone){
+          top: 127px;
+          left: 158px;
+          width: 32px;
+          height: 99px;
+        }
       }
 
       .a4 {
@@ -328,6 +446,13 @@ body {
           left: 316px;
           width: 356px;
           height: 89px;
+        }
+        // 陷阱！在手機版順序相反！
+        @include rwd(phone){
+          top: 83px;
+          left: 158px;
+          width: 169px;
+          height: 42px;
         }
       }
 
@@ -343,12 +468,17 @@ body {
         cursor: pointer;
 
         @include rwd(pad) {
-          width: 147px;
-          height: 77px;
           top: 290px;
           left: 478px;
+          width: 147px;
+          height: 77px;
         }
-
+        @include rwd(phone) {
+          top: 153px;
+          left: 192px;
+          width: 102px;
+          height: 53px;
+        }
         .white {
           display: flex;
           align-items: center;
@@ -361,6 +491,12 @@ body {
             width: 178px;
             height: 59px;
           }
+          @include rwd(phone){
+            margin-left: 13px;
+            width: 124px;
+            min-width: 124px;
+            height: 41px;
+          }
 
           .word {
             margin: 0 17px 0 32px;
@@ -371,13 +507,19 @@ body {
               margin: 0 10px 0 19px;
               font: Bold 40px/30px Roboto;
             }
+            @include rwd(phone){
+              margin: 0 8px 0 12px;
+              font: Bold 26px/20px Roboto;
+            }
           }
 
           img {
             position: static;
-
             @include rwd(pad) {
               width: 27px;
+            }
+            @include rwd(phone){
+              width: 18px;
             }
           }
         }
@@ -394,6 +536,10 @@ body {
         width: 672px;
         justify-content: space-between;
         margin-top: 40px;
+      }
+      @include rwd(phone){
+        margin-top: 20px;
+        flex-wrap: wrap;
       }
 
       .box {
@@ -412,6 +558,14 @@ body {
           height: 280px;
           font: Bold 32px/25px Roboto;
           margin: 0;
+        }
+        @include rwd(phone){
+          width: 352px;
+          height: 284px;
+          font: Bold 32px/25px Roboto;
+          &:not(:last-child){
+            margin-bottom: 20px;
+          }
         }
 
         &::before {
@@ -445,6 +599,9 @@ body {
       margin-top: -370px;
       width: 672px;
     }
+    @include rwd(phone){
+      margin-top: -170px; // 暫時的
+    }
 
     .title {
       margin-bottom: 60px;
@@ -455,6 +612,10 @@ body {
       @include rwd(pad) {
         margin-bottom: 32px;
         font: 32px/48px PingFang TC;
+      }
+      @include rwd(phone){
+        margin-bottom: 16px;
+        font: 24px/36px PingFang TC;
       }
     }
 
@@ -467,6 +628,9 @@ body {
       @include rwd(pad) {
         flex-wrap: wrap;
         justify-content: space-between;
+      }
+      @include rwd(phone){
+        flex-wrap: wrap;
       }
     }
 
@@ -483,6 +647,12 @@ body {
         margin: 0 0 24px 0;
         width: 324px;
       }
+      @include rwd(phone) {
+        width: 352px;
+        &:not(:last-child){
+          margin-bottom: 16px;
+        }
+      }
 
       .bg {
         width: 282px;
@@ -494,11 +664,18 @@ body {
           width: 324px;
           object-fit: cover;
         }
+        @include rwd(phone){
+          width: 352px;
+          object-fit: cover;
+        }
       }
 
       .name {
         font: bold 16px/21px Roboto;
         color: #212529;
+        @include rwd(phone){
+          margin-top: 16px;
+        }
       }
 
       .said {
