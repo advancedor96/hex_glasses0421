@@ -21,7 +21,10 @@
     @content
   }
 }
-
+html,body{
+  height: 100%;
+  margin: 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -559,9 +562,9 @@
     color: white;
 
     &>.container {
-      width: 1150px;
+      max-width: 1150px;
       margin: 0 auto;
-      padding-top: 48px;
+      padding: 48px 48px 40px;
     }
 
     .row {
@@ -575,10 +578,16 @@
         text-decoration: none;
         font: 20px/30px PingFang TC;
         margin-right: 48px;
+        @include rwd(pad){
+          font: 14px PingFang TC;
+        }
       }
 
       &>img {
         margin-left: 32px;
+        @include rwd(pad){
+          width: 24px;
+        }
       }
 
       margin-bottom: 16px;
@@ -588,9 +597,15 @@
     .a3 {
       font-size: 36px;
 
+      @include rwd(pad){
+        font-size: 20px;
+      }
       &>img {
         height: 36px;
         margin-right: 16px;
+        @include rwd(pad){
+          width: 32px;
+        }
       }
 
       margin: 8px 0;
@@ -603,6 +618,9 @@
 
       &>img {
         margin-right: 38px;
+        @include rwd(pad){
+          display: none;
+        }
       }
 
       &>.copyright {
