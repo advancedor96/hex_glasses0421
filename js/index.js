@@ -1,12 +1,13 @@
 $('#desktop').click(() => {
-  console.log('click')
-  window.location.pathname= '/pages/desktop'
+  // window.location.pathname= '/pages/desktop'
+  let win = window.open('/pages/desktop', '_blank');
+  win.focus();
 });
 $('#tablet').click(() => {
-  console.log('click')
-  window.location.pathname= '/pages/tablet'
+  let win = window.open('/pages/tablet', '_blank');
+  win.focus();
 });
 $('#mobile').click(() => {
-  console.log('click')
-  window.location.pathname= '/pages/mobile'
+  let win = window.open('/pages/mobile', '_blank');
+  win.focus();
 });

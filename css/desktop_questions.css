@@ -1,0 +1,375 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.btn {
+  width: 131px;
+  height: 43px;
+  margin: 8px;
+  background: #aa0601 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  font: 16px/24px PingFang TC;
+}
+
+.home {
+  height: 100%;
+}
+.home .menu {
+  width: 100%;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  background-color: #aa0601;
+}
+.home .menu li {
+  float: left;
+  list-style: none;
+  margin: 0 50px 0 0;
+}
+.home .menu li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.home .menu .menu-logo {
+  margin: auto;
+  margin-left: 48px;
+}
+@media all and (max-width: 600px) {
+  .home .menu .menu-logo {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    left: 45%;
+    margin-top: 11px;
+  }
+  .home .menu .menu-logo img {
+    width: 48px;
+  }
+}
+.home .menu .toggle-nav {
+  display: none;
+}
+@media all and (max-width: 600px) {
+  .home .menu .toggle-nav {
+    position: absolute;
+    left: 4%;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 50px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home .menu {
+    height: 50px;
+    position: relative;
+    display: inline-block;
+  }
+  .home .menu ul.active {
+    display: none;
+    background-color: #aa0601;
+  }
+  .home .menu ul {
+    margin: 0;
+    background-color: #aa0601;
+  }
+  .home .menu ul li {
+    display: block;
+    float: none;
+    text-align: center;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  .home .menu ul li a {
+    display: block;
+  }
+}
+.home > .header {
+  height: 304px;
+  background-image: url("../assets/72.png");
+  background-size: cover;
+  background-position: 30%;
+}
+@media all and (max-width: 600px) {
+  .home > .header {
+    height: 143px;
+  }
+}
+.home > .header .title {
+  font: 64px/80px PingFang TC;
+  display: flex;
+  align-items: center;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .header .title {
+    width: 672px;
+    font-size: 48px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .header .title {
+    font-size: 28px;
+  }
+}
+.home > .header .title img {
+  width: 58px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .header .title img {
+    width: 48px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .header .title img {
+    width: 24px;
+  }
+}
+.home > .header > .container {
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .header > .container {
+    width: 672px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .header > .container {
+    width: 352px;
+  }
+}
+.home > .main > .container {
+  height: 100%;
+  max-width: 1200px;
+  margin: 88px auto 0;
+  padding: 0 8px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .main > .container {
+    width: 672px;
+    margin: 40px auto 0;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .main > .container {
+    width: 352px;
+    margin: 24px auto 0;
+  }
+}
+.home > .main > .container > .title {
+  font: 32px/63px PingFang TC;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .main > .container > .title {
+    font-size: 28px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .main > .container > .title {
+    font-size: 20px;
+  }
+}
+.home > .main > .container .questions .q {
+  cursor: pointer;
+  height: 72px;
+  padding: 0 32px;
+  font: bold 20px/72px PingFang TC;
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .main > .container .questions .q {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .main > .container .questions .q {
+    font-size: 16px;
+  }
+}
+.home > .main > .container .questions .a {
+  padding: 22px 38px;
+  border: 1px solid #000000;
+  display: none;
+  background: #F2F2F2;
+  font: 16px/24px PingFang TC;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .main > .container .questions .a {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .main > .container .questions .a {
+    font-size: 14px;
+  }
+}
+.home > .footer {
+  margin-top: 156px;
+  background-color: #aa0601;
+  color: white;
+}
+.home > .footer > .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 8px 0;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .footer > .container {
+    width: 672px;
+    padding: 40px 0 40px;
+  }
+}
+@media all and (max-width: 600px) {
+  .home > .footer > .container {
+    max-width: 352px;
+    padding: 24px 0  12px;
+    position: relative;
+  }
+  .home > .footer > .container a {
+    display: none;
+  }
+}
+.home > .footer .row {
+  display: flex;
+  align-items: center;
+}
+.home > .footer .a1 {
+  margin-bottom: 16px;
+}
+.home > .footer .a1 a {
+  color: white;
+  text-decoration: none;
+  font: 16px/30px PingFang TC;
+  margin-right: 48px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .footer .a1 a {
+    font: 14px PingFang TC;
+  }
+}
+.home > .footer .a1 > img {
+  margin-left: 32px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .footer .a1 > img {
+    width: 24px;
+  }
+}
+.home > .footer .a2,
+.home > .footer .a3 {
+  font-size: 36px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .footer .a2,
+  .home > .footer .a3 {
+    font-size: 20px;
+  }
+}
+.home > .footer .a2 > img,
+.home > .footer .a3 > img {
+  height: 36px;
+  margin-right: 16px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .footer .a2 > img,
+  .home > .footer .a3 > img {
+    width: 32px;
+  }
+}
+.home > .footer .a4 {
+  margin-top: 24px;
+  padding: 24px 0;
+  border-top: 1px solid white;
+}
+.home > .footer .a4 > img {
+  margin-right: 38px;
+}
+@media all and (min-width: 601px) and (max-width: 960px) {
+  .home > .footer .a4 > img {
+    display: none;
+  }
+}
+.home > .footer .a4 > .copyright {
+  font: 16px/24px Roboto;
+}
+.home > .footer .a4 > a {
+  color: white;
+  text-decoration: none;
+  font: 14px PingFang TC;
+  margin-left: 62px;
+}
+@media all and (max-width: 600px) {
+  .home > .footer .a1 img {
+    width: 24px;
+  }
+  .home > .footer .a2 {
+    margin-top: -40px;
+    font: 300 16px/30px Roboto;
+  }
+  .home > .footer .a2 img {
+    height: 13px;
+    margin: 0;
+    margin-right: 5px;
+  }
+  .home > .footer .a3 {
+    font: 300 16px/30px Roboto;
+    margin: 0;
+  }
+  .home > .footer .a3 img {
+    height: 13px;
+    margin-right: 5px;
+  }
+  .home > .footer .a4 {
+    display: block;
+    padding: 0;
+    padding-top: 12px;
+  }
+  .home > .footer .a4 .spacer {
+    display: none;
+  }
+  .home > .footer .a4 a {
+    display: block;
+    margin: 0;
+    margin-bottom: 8px;
+    font: 300 14px/21px Roboto;
+  }
+  .home > .footer .a4 .copyright {
+    display: block;
+    font: 300 14px/21px Roboto;
+    margin-bottom: 8px;
+  }
+  .home > .footer .a4 img {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 46px;
+    margin: 0;
+  }
+}
