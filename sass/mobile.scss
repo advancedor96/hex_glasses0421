@@ -2,6 +2,8 @@
 
 .home {
   height: 100%;
+  max-width: 375px;
+  margin: 0 auto;
 
 
   .menu {
@@ -22,58 +24,49 @@
       }
     }
     .menu-logo{
-      margin: auto;
-      margin-left: 48px;
-      @include rwd(phone){
-        display: inline-block;
-        margin: 0;
-        position: relative;
-        left: 45%;
-        margin-top: 11px;
-        img {
-          width: 48px;
-        }
+      display: inline-block;
+      margin: 0;
+      position: relative;
+      left: 45%;
+      margin-top: 11px;
+      img {
+        width: 48px;
       }
+
     }
     .toggle-nav{
-      display: none;
-      @include rwd(phone){
-        position: absolute;
-        left: 4%;
-        display: inline-block;
-        color: #ffffff;
-        text-decoration: none;
-        line-height: 50px;
-
-      }
-    }
-
-    @include rwd(phone){
-      height: 50px;
-      position: relative;
+      position: absolute;
+      left: 4%;
       display: inline-block;
-      ul.active{
-        display: none;
-        background-color: #aa0601;
-      }
-      ul{
-        margin: 0;
-        background-color: #aa0601;
-        li{
+      color: #ffffff;
+      text-decoration: none;
+      line-height: 50px;
+
+    }
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    ul.active{
+      display: none;
+      background-color: #aa0601;
+    }
+    ul{
+      margin: 0;
+      background-color: #aa0601;
+      li{
+        display: block;
+        float: none;
+        text-align: center;
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px;
+        border-bottom: 1px solid #FFFFFF;
+        a{
           display: block;
-          float: none;
-          text-align: center;
-          height: 60px;
-          font-size: 20px;
-          line-height: 60px;
-          border-bottom: 1px solid #FFFFFF;
-          a{
-            display: block;
-          }
         }
       }
-
     }
+
   }
 
 
@@ -206,32 +199,14 @@
     }
   }
   &>.showcase_corporate {
-    height: 2162px;
     background: url(../assets/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png) center/cover;
-
-    @include rwd(pad) {
-      height: 1221px;
-    }
-
-    @include rwd(phone) {
-      height: 1096px;
-    }
+    height: 1096px;
 
     .title {
       color: white;
       text-align: center;
-      padding: 64px 0 60px 0;
-      font: bolder 48px/72px PingFang TC;
-
-      @include rwd(pad) {
-        padding: 40px 0 32px 0;
-        font: bolder 32px/48px PingFang TC;
-      }
-
-      @include rwd(phone) {
-        padding: 24px 0 16px 0;
-        font: bolder 24px/36px PingFang TC;
-      }
+      padding: 24px 0 16px 0;
+      font: bolder 24px/36px PingFang TC;
     }
 
     position: relative;
@@ -534,61 +509,59 @@
     }
 
     // footer 行動版特別處理
-    @include rwd(phone) {
-      .a1 {
-        img {
-          width: 24px;
-        }
+    .a1 {
+      img {
+        width: 24px;
+      }
+    }
+
+    .a2 {
+      margin-top: -40px;
+      font: 300 16px/30px Roboto;
+
+      img {
+        height: 13px;
+        margin: 0;
+        margin-right: 5px;
+      }
+    }
+
+    .a3 {
+      font: 300 16px/30px Roboto;
+
+      img {
+        height: 13px;
+        margin-right: 5px;
       }
 
-      .a2 {
-        margin-top: -40px;
-        font: 300 16px/30px Roboto;
-
-        img {
-          height: 13px;
-          margin: 0;
-          margin-right: 5px;
-        }
+      margin: 0;
+    }
+    .a4{
+      display: block;
+      padding: 0;
+      padding-top: 12px;
+      .spacer{
+        display: none;
       }
-
-      .a3 {
-        font: 300 16px/30px Roboto;
-
-        img {
-          height: 13px;
-          margin-right: 5px;
-        }
-
+      a{
+        display: block;
+        margin: 0;
+        margin-bottom: 8px;
+        font: 300 14px/21px Roboto;
+      }
+      .copyright{
+        display: block;
+        font: 300 14px/21px Roboto;
+        margin-bottom: 8px;
+      }
+      img{
+        position: absolute;
+        right:12px;
+        bottom: 12px;
+        width: 46px;
         margin: 0;
       }
-      .a4{
-        display: block;
-        padding: 0;
-        padding-top: 12px;
-        .spacer{
-          display: none;
-        }
-        a{
-          display: block;
-          margin: 0;
-          margin-bottom: 8px;
-          font: 300 14px/21px Roboto;
-        }
-        .copyright{
-          display: block;
-          font: 300 14px/21px Roboto;
-          margin-bottom: 8px;
-        }
-        img{
-          position: absolute;
-          right:12px;
-          bottom: 12px;
-          width: 46px;
-          margin: 0;
-        }
 
-      }
     }
   }
 }
