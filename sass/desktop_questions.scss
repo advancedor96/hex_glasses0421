@@ -154,15 +154,17 @@
           border: 1px solid #000000;
           display: flex;
           justify-content: space-between;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
           width: 100%;
           @include rwd(pad){
             font-size: 16px;
           }
           @include rwd(phone){
             font-size: 16px;
+          }
+          .text{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
           }
 
         }
