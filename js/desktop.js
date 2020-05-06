@@ -1,3 +1,7 @@
+$('.toggle-nav').click(()=>{
+  $('#menuUl').toggleClass('active');
+})
+
 let img = $(".showcase_classic > .item:eq(1)>img:eq(1)");
 img.mouseenter(()=>{
   img.attr("src", "../assets/15.png")

@@ -52,36 +52,78 @@ body {
 .home {
   height: 100%;
 
-  .nav {
+  .menu {
+    width: 100%;
     height: 108px;
     display: flex;
     align-items: center;
     background-color: #aa0601;
 
-    @include rwd(phone) {
-      height: 50px;
-      justify-content: center;
-
-      .spacer {
-        display: none;
+    li{
+      float: left;
+      list-style: none;
+      margin: 0 50px 0 0;
+      a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
       }
+    }
+    .menu-logo{
+      margin: auto;
+      margin-left: 48px;
+      @include rwd(phone){
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        left: 45%;
+        margin-top: 11px;
+        img {
+          width: 48px;
+        }
+      }
+    }
+    .toggle-nav{
+      display: none;
+      @include rwd(phone){
+        position: absolute;
+        left: 4%;
+        display: inline-block;
+        color: #ffffff;
+        text-decoration: none;
+        line-height: 50px;
 
-      img {
-        width: 48px;
       }
     }
 
-    a {
-      color: white;
-      text-decoration: none;
-      font: 20px/30px PingFang TC;
-      margin: 0 32px;
-
-      @include rwd(phone) {
+    @include rwd(phone){
+      height: 50px;
+      position: relative;
+      display: inline-block;
+      ul.active{
         display: none;
+        background-color: #aa0601;
       }
+      ul{
+        margin: 0;
+        background-color: #aa0601;
+        li{
+          display: block;
+          float: none;
+          text-align: center;
+          height: 60px;
+          font-size: 20px;
+          line-height: 60px;
+          border-bottom: 1px solid #FFFFFF;
+          a{
+            display: block;
+          }
+        }
+      }
+
     }
   }
+
 
   .main {
     height: 840px;

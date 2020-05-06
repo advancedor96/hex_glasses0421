@@ -9,18 +9,21 @@
 
   <link rel="stylesheet" href="../css/mobile.css">
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script defer src="../js/mobile.js"></script>
 </head>
 
 <body>
   <div class="home">
-    <div class="nav">
-      <img style="margin:88px;" width="80" src="../assets/logo.png" alt />
-      <div class="spacer"></div>
-      <a href>系列鏡框</a>
-      <a href>門市據點</a>
-      <a href>部落格</a>
-      <a href="./desktop_questions.html">常見問題</a>
-    </div>
+    <nav class="menu">
+      <a id="menubtn" class="toggle-nav" href="#">☰</a>
+      <div class="menu-logo"><a><img width="80" src="../assets/logo.png" alt /></a></div>
+      <ul id="menuUl" class="active">
+        <li><a href>系列鏡框</a></li>
+        <li><a href>門市據點</a></li>
+        <li><a href>部落格</a></li>
+        <li><a href="./desktop_questions.html">常見問題</a></li>
+      </ul>
+    </nav>
     <div class="main">
       <div class="subtitle">Promise-Desert 2020 早春系列</div>
       <div class="title">看得清，才能看得遠</div>
