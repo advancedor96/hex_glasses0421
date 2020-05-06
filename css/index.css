@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.btn {
+  width: 131px;
+  height: 43px;
+  margin: 8px;
+  background: #aa0601 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  font: 16px/24px PingFang TC;
+}
+
+.link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.link .btn {
+  width: 131px;
+  height: 43px;
+  margin: 8px;
+  background: #aa0601 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  font: Medium 16px/24px PingFang TC;
+  cursor: pointer;
+}

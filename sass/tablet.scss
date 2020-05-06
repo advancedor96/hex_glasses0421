@@ -1,0 +1,505 @@
+@import "./common.scss";
+
+.home {
+  height: 100%;
+
+
+  .menu {
+    width: 100%;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    background-color: #aa0601;
+
+    li{
+      float: left;
+      list-style: none;
+      margin: 0 50px 0 0;
+      a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    .menu-logo{
+      margin: auto;
+      margin-left: 48px;
+      @include rwd(phone){
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        left: 45%;
+        margin-top: 11px;
+        img {
+          width: 48px;
+        }
+      }
+    }
+    .toggle-nav{
+      display: none;
+      @include rwd(phone){
+        position: absolute;
+        left: 4%;
+        display: inline-block;
+        color: #ffffff;
+        text-decoration: none;
+        line-height: 50px;
+
+      }
+    }
+
+    @include rwd(phone){
+      height: 50px;
+      position: relative;
+      display: inline-block;
+      ul.active{
+        display: none;
+        background-color: #aa0601;
+      }
+      ul{
+        margin: 0;
+        background-color: #aa0601;
+        li{
+          display: block;
+          float: none;
+          text-align: center;
+          height: 60px;
+          font-size: 20px;
+          line-height: 60px;
+          border-bottom: 1px solid #FFFFFF;
+          a{
+            display: block;
+          }
+        }
+      }
+
+    }
+  }
+
+
+  .main {
+    height: 840px;
+    background-image: url("../assets/68.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #650300;
+
+    .subtitle {
+      position: absolute;
+      top: 373px;
+      right: 48px;
+      font: 20px/30px PingFang TC;
+    }
+
+    .title {
+      position: absolute;
+
+      font: 48px/72px PingFang TC;
+      top: 401px;
+      right: 48px;
+    }
+  }
+
+  &>.description {
+    height: 668px;
+    color: #650300;
+    background: #aa06010d;
+    overflow: auto;
+
+    .title {
+      padding-top: 40px;
+      font: 32px/48px PingFang TC;
+      text-align: center;
+    }
+
+    .fourBox {
+      margin-top: 44px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 224px;
+        max-width: 224px;
+        margin: 0 38px;
+        height: 256px;
+
+
+
+        img {
+          width: 80px;
+          height: 80px;
+          margin-bottom: 16px;
+        }
+
+        .name {
+          font: 20px/30px PingFang TC;
+        }
+
+        .desc {
+          font: 16px/24px PingFang TC;
+          color: black;
+        }
+      }
+    }
+  }
+
+  &>.showcase_classic {
+    color: #650300;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 80px;
+
+    .title {
+      padding: 64px 0 60px 0;
+      font: bolder 32px/48px PingFang TC;
+    }
+
+    .item {
+      color: #aa0601;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin: 16px 0;
+      padding-left: 48px;
+
+      .word {
+        font: Italic bolder 28px/42px Roboto;
+        order: 2;
+      }
+
+      img {
+        width: 32px;
+        order: 2;
+        margin-right: 8px;
+      }
+
+      .pic {
+
+        width: 410px;
+        height: 168px;
+        margin: 0;
+        margin-right: 65px;
+        order: 1;
+      }
+
+    }
+
+  }
+
+  &>.showcase_corporate {
+    height: 1221px;
+    background: url(../assets/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png) center/cover;
+
+    .title {
+      color: white;
+      text-align: center;
+      padding: 40px 0 32px 0;
+      font: bolder 32px/48px PingFang TC;
+    }
+
+    position: relative;
+
+    img {
+      position: absolute;
+    }
+
+    .container {
+      position: relative;
+      margin: 0 auto;
+      max-width: 1539px;
+      max-height: 840px;
+      width: 672px;
+      height: 367px;
+
+      .a1 {
+        top: 0px;
+        left: 0px;
+        width: 251px;
+        height: 367px;
+      }
+
+      .a2 {
+        top: 0px;
+        left: 254px;
+        width: 418px;
+        height: 198px;
+      }
+
+      .a3 {
+        top: 201px;
+        left: 254px;
+        width: 58px;
+        height: 166px;
+      }
+
+      .a4 {
+        top: 201px;
+        left: 316px;
+        width: 356px;
+        height: 89px;
+      }
+
+      .moreBox {
+        position: absolute;
+        width: 147px;
+        height: 77px;
+        top: 290px;
+        left: 478px;
+        background: url(../assets/5.png);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .white {
+          display: flex;
+          align-items: center;
+          margin-left: 31px;
+          background: white;
+          width: 178px;
+          height: 59px;
+
+
+          .word {
+            margin: 0 10px 0 19px;
+            font: Bold 40px/30px Roboto;
+            color: #aa0601;
+          }
+
+          img {
+            position: static;
+            width: 27px;
+          }
+        }
+      }
+    }
+
+    .second_container {
+      margin: 0 auto;
+      margin-top: 40px;
+      display: flex;
+      width: 672px;
+      justify-content: space-between;
+
+      .box {
+        width: 322px;
+        height: 280px;
+        font: Bold 32px/25px Roboto;
+        color: #aa0601;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0;
+
+
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: rgba(255, 255, 255, 0.5);
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .box1 {
+        background: url(../assets/14.png) center/cover;
+      }
+
+      .box2 {
+        background: url(../assets/39.png) center/cover;
+      }
+    }
+
+
+  }
+
+  &>.customer_recommand {
+    margin: 0 auto;
+    margin-top: -370px;
+    position: relative;
+    width: 672px;
+
+
+    .title {
+      margin-bottom: 32px;
+      font: 32px/48px PingFang TC;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .customer {
+      width: 324px;
+      height: 440px;
+      margin: 0 0 24px 0;
+      border: 1px solid #dee2e6;
+      box-sizing: border-box;
+      padding: 0 16px 16px;
+      background: white;
+
+
+      .bg {
+        width: 324px;
+        height: 256px;
+        margin: -1px 0 0 -17px;
+        border: 0px solid #dee2e6;
+        object-fit: cover;
+      }
+
+      .name {
+        font: bold 16px/21px Roboto;
+        color: #212529;
+      }
+
+      .said {
+        margin-top: 16px;
+        font: 16px/24px Roboto;
+        color: #212529;
+      }
+
+      .time {
+        margin-top: 16px;
+        font: 16px/21px Roboto;
+        color: #707070;
+      }
+    }
+  }
+
+  &>.contact {
+    margin-top: 16px;
+    height: 767px;
+    background-color: #aa06010d;
+    color: black;
+
+    .title {
+      font: bold 32px/48px PingFang TC;
+      padding-top: 40px;
+      margin-bottom: 24px;
+      text-align: center;
+
+    }
+
+    .container {
+      width: 496px;
+      margin: 0 auto;
+
+
+      .description {
+        font-size: 16px;
+      }
+
+      .input_title {
+        margin-top: 16px;
+
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        background: transparent;
+        border: 1px solid gray;
+        padding: 14px 16px;
+
+        &::placeholder {
+          opacity: 0.2;
+          font-size: 16px;
+        }
+      }
+
+      input[type=checkbox] {
+        display: inline;
+        width: 24px;
+      }
+
+      .btn {
+        margin: 42px auto 0;
+        display: block;
+      }
+    }
+  }
+
+  &>.footer {
+    background-color: #aa0601;
+    color: white;
+
+    &>.container {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 48px 48px 40px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+
+    .a1 {
+      a {
+        color: white;
+        text-decoration: none;
+        font: 14px PingFang TC;
+        margin-right: 48px;
+      }
+
+      &>img {
+        margin-left: 32px;
+        width: 24px;
+      }
+
+      margin-bottom: 16px;
+    }
+
+    .a2,
+    .a3 {
+      font-size: 20px;
+
+
+      &>img {
+        height: 36px;
+        margin-right: 16px;
+        width: 32px;
+
+      }
+
+      margin: 8px 0;
+    }
+
+    .a4 {
+      margin-top: 24px;
+      padding: 24px 0;
+      border-top: 1px solid white;
+
+      &>img {
+        margin-right: 38px;
+        display: none;
+      }
+
+      &>.copyright {
+        font: 16px/24px Roboto;
+      }
+
+      &>a {
+        color: white;
+        text-decoration: none;
+        font: 14px PingFang TC;
+        margin-left: 62px;
+
+      }
+    }
+  }
+
+
+}
