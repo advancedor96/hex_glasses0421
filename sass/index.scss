@@ -1,16 +1,4 @@
-html,body{
-  height: 100%;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-*:focus {
-  outline: none;
-}
-
+@import "./common.scss";
 
 .link {
   height: 100%;

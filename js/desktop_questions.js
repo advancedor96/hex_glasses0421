@@ -8,3 +8,7 @@ $('.q1').click(() => {
   }
 
 });
+
+$('.toggle-nav').click(()=>{
+  $('#menuUl').toggleClass('active');
+})

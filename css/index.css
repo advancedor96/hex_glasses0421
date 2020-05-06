@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -9,6 +10,19 @@ html, body {
 
 *:focus {
   outline: none;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.btn {
+  width: 131px;
+  height: 43px;
+  margin: 8px;
+  background: #aa0601 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  font: 16px/24px PingFang TC;
 }
 
 .link {
