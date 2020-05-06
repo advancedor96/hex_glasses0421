@@ -80,7 +80,7 @@ body {
 }
 @media all and (max-width: 600px) {
   .home .menu {
-    height: 50px;
+    height: auto;
     position: relative;
     display: inline-block;
   }
@@ -90,16 +90,18 @@ body {
   }
   .home .menu ul {
     margin: 0;
+    padding: 0;
     background-color: #aa0601;
   }
   .home .menu ul li {
+    margin: 0;
     display: block;
     float: none;
     text-align: center;
     height: 60px;
     font-size: 20px;
     line-height: 60px;
-    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
   }
   .home .menu ul li a {
     display: block;
